@@ -6,7 +6,7 @@
     <title>Flexbox practice</title>
     <style>
         .container{
-            margin:20% auto;
+            margin:20px auto;
             border: 1px solid black;
             display: flex;
             align-items: center;
@@ -23,7 +23,7 @@
 
 
         .container2{
-            margin:20% auto;
+            margin:20px auto;
             border: 1px solid black;
             display: flex;
             align-items: center;
@@ -31,9 +31,27 @@
             flex-direction: column;
             /* flex-direction: column-reverse; will reverce child direction 4-3-2-1 */
             gap: 4px;
-            padding: 4px '';
+            padding: 4px;
         }
         .container2 .child2{
+            padding:4px;
+            border:1px solid black;
+
+        }
+
+        .container3{
+            margin:20px auto;
+            height: 100px;
+            width:200px;
+            border: 1px solid black;
+            display: flex;
+            gap: 4px;
+            padding: 4px;
+            /* flex-wrap: wrap; * use flex flow */
+            flex-flow: column wrap; 
+        }
+        .container3 .child3{
+            width: 40%;
             padding:4px;
             border:1px solid black;
 
@@ -41,6 +59,7 @@
     </style>
 </head>
 <body>
+    <h1>display:flex</h1>
     <div class="container">
         <div class="child">child 1</div>
         <div class="child">child 2</div>
@@ -48,11 +67,20 @@
         <div class="child">child 4</div>
     </div>
 
+    <h1>flex-direction</h1>
     <div class="container2">
         <div class="child2">child 1</div>
         <div class="child2">child 2</div>
         <div class="child2">child 3</div>
         <div class="child2">child 4</div>
+    </div>
+
+<h1>flex-wrap + flex-flow</h1>
+    <div class="container3">
+        <div class="child3">child 1</div>
+        <div class="child3">child 2</div>
+        <div class="child3">child 3</div>
+        <div class="child3">child 4</div>
     </div>
 </body>
 </html>
