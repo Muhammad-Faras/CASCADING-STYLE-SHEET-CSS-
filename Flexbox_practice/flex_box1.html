@@ -4,79 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox practice</title>
-    <style>
-        .container{
-            margin:20px auto;
-            border: 1px solid black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            /* flex-direction: row-reverse; will reverce child direction 4-3-2-1 */
-            gap: 4px;
-            padding: 4px;
-        }
-        .container .child{
-            padding:4px;
-            border:1px solid black;
-
-        }
-
-
-        .container2{
-            margin:20px auto;
-            border: 1px solid black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            /* flex-direction: column-reverse; will reverce child direction 4-3-2-1 */
-            gap: 4px;
-            padding: 4px;
-        }
-        .container2 .child2{
-            padding:4px;
-            border:1px solid black;
-
-        }
-
-        .container3{
-            margin:20px auto;
-            height: 100px;
-            width:200px;
-            border: 1px solid black;
-            display: flex;
-            gap: 4px;
-            padding: 4px;
-            /* flex-wrap: wrap; * use flex flow */
-            flex-flow: column wrap; 
-        }
-        .container3 .child3{
-            width: 40%;
-            padding:4px;
-            border:1px solid black;
-
-        }
-
-        .container4{
-            margin:20px auto;
-            height: 100px;
-            width:200px;
-            border: 1px solid black;
-            display: flex;
-            gap: 4px;
-            padding: 4px;
-            /* flex-wrap: wrap; * use flex flow */
-            flex-flow: row wrap; 
-            justify-content: flex-end;
-            align-items: center;
-        }
-        .container4 .child4{
-            width: 40%;
-            padding:4px;
-            border:1px solid black;
-
-        }
-    </style>
+    <link rel="stylesheet" href="/Flexbox_practice/flex_box1.css">
+    
 </head>
 <body>
     <h1>display:flex</h1>
@@ -111,6 +40,19 @@
         <div class="child4">child 3</div>
         <div class="child4">child 4</div>
         <div class="child4">child 5</div>
+    </div>
+
+    <h1>align-content & order & flex-grow</h1>
+    <div class="container5">
+        <div class="child5 item1">child 1</div>
+        <div class="child5 item2">child 2</div>
+        <div class="child5">child 3</div>
+        <div class="child5">child 4</div>
+        <div class="child5">child 5</div>
+        <div class="child5">child 6</div>
+        <div class="child5">child 7</div>
+        <div class="child5">child 8</div>
+        <div class="child5">child 9</div>
     </div>
 </body>
 </html>
