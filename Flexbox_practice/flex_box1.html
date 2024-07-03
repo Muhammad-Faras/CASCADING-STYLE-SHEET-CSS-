@@ -56,6 +56,26 @@
             border:1px solid black;
 
         }
+
+        .container4{
+            margin:20px auto;
+            height: 100px;
+            width:200px;
+            border: 1px solid black;
+            display: flex;
+            gap: 4px;
+            padding: 4px;
+            /* flex-wrap: wrap; * use flex flow */
+            flex-flow: row wrap; 
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .container4 .child4{
+            width: 40%;
+            padding:4px;
+            border:1px solid black;
+
+        }
     </style>
 </head>
 <body>
@@ -81,6 +101,16 @@
         <div class="child3">child 2</div>
         <div class="child3">child 3</div>
         <div class="child3">child 4</div>
+    </div>
+
+
+<h1>justify-centent + align-items</h1>
+    <div class="container4">
+        <div class="child4">child 1</div>
+        <div class="child4">child 2</div>
+        <div class="child4">child 3</div>
+        <div class="child4">child 4</div>
+        <div class="child4">child 5</div>
     </div>
 </body>
 </html>
